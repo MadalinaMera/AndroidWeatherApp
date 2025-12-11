@@ -1,4 +1,5 @@
 package com.example.androidweatherapp.util
+import com.example.androidweatherapp.BuildConfig
 /**
  * Application-wide constants.
  */

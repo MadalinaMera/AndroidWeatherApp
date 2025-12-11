@@ -25,6 +25,8 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
+import com.example.androidweatherapp.ui.screens.forecast.ForecastScreen
+import com.example.androidweatherapp.ui.screens.journal.JournalScreen
 import com.example.androidweatherapp.ui.screens.login.LoginScreen
 import com.example.androidweatherapp.util.Constants
 
@@ -119,7 +121,7 @@ fun WeatherJournalApp(
             modifier = Modifier.padding(innerPadding)
         ) {
             composable(Constants.Routes.FORECAST) {
-                //ForecastScreen()
+                ForecastScreen()
             }
 
             composable(Constants.Routes.LOGIN) {
@@ -133,13 +135,13 @@ fun WeatherJournalApp(
             }
 
             composable(Constants.Routes.JOURNAL) {
-                /*JournalScreen(
+                JournalScreen(
                     onLogout = {
                         navController.navigate(Constants.Routes.FORECAST) {
                             popUpTo(0) { inclusive = true }
                         }
                     }
-                )*/
+                )
             }
         }
     }
